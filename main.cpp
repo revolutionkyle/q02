@@ -24,10 +24,13 @@ int main()
   //the first and second blanks should be replaced with the coordinates
   //of the element's row and column and the third blank should be replaced
   //with the value of that element
-
-  
-
-
+  for(int index=0;index<wordGrid.size();index++) //row
+  {
+    for(int index1=0;index1<wordGrid[index].size();index1++) // column
+    {
+        cout << "Row: " << index << "Column: " << index1<< "is: " << wordGrid[index][index1] << endl;
+    }
+  }
 
  return 0;
 }
